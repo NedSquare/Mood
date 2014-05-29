@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 #For my users
 gem 'devise', '~> 3.2.4'
+gem "paperclip", "~> 4.1"
 
 
 #Required for Heroku
