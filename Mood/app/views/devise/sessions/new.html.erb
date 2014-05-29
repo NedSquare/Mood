@@ -5,7 +5,11 @@
     </div>
   </div>
   <div class="panel-body">
-    <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+    <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) :html => { :multipart => true }  do |f| %>
+      <%= form.file_field :avatar %>
+      <% end %>
+<%= image_tag @user.avatar.url(:medium) %>
+    
 
       <div class="form-group">
         <%= f.label :email %>
